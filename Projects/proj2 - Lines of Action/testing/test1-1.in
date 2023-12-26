@@ -1,0 +1,6 @@
+# Plays Against itself.
+#* java -ea loa.Main
+auto black
+auto white
+#*move
+#*move/win

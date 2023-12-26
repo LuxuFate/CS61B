@@ -1,0 +1,38 @@
+1a. Results for InsertRandomSpeedTest for N = 1000000:
+    BSTStringSet: 2.73s
+    ECHashStringSet: 1.49s
+    TreeSet: 2.16s
+    HashSet: 0.91s
+
+1b. Results for InsertRandomSpeedTest for N = 2000000:
+    BSTStringSet: 5.89s
+    ECHashStringSet: 2.79s
+    TreeSet: 5.15s
+    HashSet: 2.22s
+
+
+1c. Does your ECHashStringSet look roughly linear or roughly quadratic
+in its scaling behavior for random strings?
+    My ECHashStringSet looks roughly linear since by doubling the input size, the time that it took also doubled.
+
+2a. Results for InsertInOrderSpeedTest for N = 10000:
+    BSTStringSet: 1.96s
+    ECHashStringSet: 0.02s
+    TreeSet: 0.06s
+    HashSet: 0.02s
+
+2b. Results for InsertInOrderSpeedTest for N = 20000:
+    BSTStringSet: 5.79s
+    ECHashStringSet: 0.07s
+    TreeSet: 0.10s
+    HashSet: 0.06s
+
+2c. Does your **BST**StringSet look roughly linear or roughly
+quadratic in its scaling behavior for in order strings?
+    My BSTStringSet looks roughly quadratic since doubling the input would more than double the time it took.
+    I confirmed this by using N of 30000, which took 17.16s, which is definitely not linear.
+
+Before submitting, make sure that your ECHashStringSet is capable of
+handling inputs of size 1000000 in a reasonable amount of time (a few
+seconds).
+
